@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\juanf\\OneDrive\\Gramip\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0477652A-6F38-4C40-904F-8D446BDB06C9}|Gramip.csproj|C:\\Users\\juanf\\OneDrive\\Gramip\\codificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0477652A-6F38-4C40-904F-8D446BDB06C9}|Gramip.csproj|solutionrelative:codificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0477652A-6F38-4C40-904F-8D446BDB06C9}|Gramip.csproj|C:\\Users\\juanf\\OneDrive\\Gramip\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0477652A-6F38-4C40-904F-8D446BDB06C9}|Gramip.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0477652A-6F38-4C40-904F-8D446BDB06C9}|Gramip.csproj|c:\\users\\juanf\\onedrive\\gramip\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0477652A-6F38-4C40-904F-8D446BDB06C9}|Gramip.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0477652A-6F38-4C40-904F-8D446BDB06C9}|Gramip.csproj|C:\\Users\\juanf\\OneDrive\\Gramip\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0477652A-6F38-4C40-904F-8D446BDB06C9}|Gramip.csproj|solutionrelative:data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0477652A-6F38-4C40-904F-8D446BDB06C9}|Gramip.csproj|C:\\Users\\juanf\\OneDrive\\Gramip\\decodificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0477652A-6F38-4C40-904F-8D446BDB06C9}|Gramip.csproj|solutionrelative:decodificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Codificacion.cs",
+              "DocumentMoniker": "C:\\Users\\juanf\\OneDrive\\Gramip\\Codificacion.cs",
+              "RelativeDocumentMoniker": "Codificacion.cs",
+              "ToolTip": "C:\\Users\\juanf\\OneDrive\\Gramip\\Codificacion.cs",
+              "RelativeToolTip": "Codificacion.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAIwDYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T23:48:01.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\juanf\\OneDrive\\Gramip\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\juanf\\OneDrive\\Gramip\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAowMgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T23:13:47.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "data.cs",
+              "DocumentMoniker": "C:\\Users\\juanf\\OneDrive\\Gramip\\data.cs",
+              "RelativeDocumentMoniker": "data.cs",
+              "ToolTip": "C:\\Users\\juanf\\OneDrive\\Gramip\\data.cs",
+              "RelativeToolTip": "data.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T23:13:47.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Decodificacion.cs",
+              "DocumentMoniker": "C:\\Users\\juanf\\OneDrive\\Gramip\\Decodificacion.cs",
+              "RelativeDocumentMoniker": "Decodificacion.cs",
+              "ToolTip": "C:\\Users\\juanf\\OneDrive\\Gramip\\Decodificacion.cs",
+              "RelativeToolTip": "Decodificacion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T23:13:47.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\juanf\\OneDrive\\Gramip\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\juanf\\OneDrive\\Gramip\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T23:13:47.251Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

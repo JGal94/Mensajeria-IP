@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing.Text;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,55 +15,30 @@ namespace Gramip
     {
         
 
-        public String[,] codificacion(String mensajeacod)
+        public byte[] codificacion(String mensajeacod, String clave)
         {
-            StringBuilder asciif = new StringBuilder();
-            foreach (char caracter in mensajeacod)
+
+            byte[] bytesTextoOriginal = Encoding.UTF8.GetBytes(mensajeacod);
+            byte[] bytesClave = Encoding.UTF8.GetBytes(clave);
+
+            using (Aes aesAlg = Aes.Create())
             {
-                int ascii = Convert.ToInt32(caracter);
-                asciif.Append(ascii).Append(" ");
+                aesAlg.Key = bytesClave;
+                aesAlg.Mode = CipherMode.CBC; // Modo de cifrado: CBC
+                aesAlg.Padding = PaddingMode.PKCS7; // Modo de relleno: PKCS7
 
+                // Generar un vector de inicialización (IV) aleatorio
+                aesAlg.GenerateIV();
+                byte[] iv = aesAlg.IV;
 
-
-            }
-
-
-            String resultado = asciif.ToString();
-            int len = resultado.Length;
-            String[,] resultMatrix = new string[2, 2];
-
-            if (len % 4 != 0)
-            {
-                resultado += " 32";
-            }
-
-            
-
-                int control = 0;
-                int div = len / 4;
-
-                
-
-                for (int i = 0; i < 2; i++)
+                using (ICryptoTransform encryptor = aesAlg.CreateEncryptor(aesAlg.Key, iv))
                 {
-                    for (int j = 0; j < 2; j++)
-                    {
-                        resultMatrix[i, j] = resultado.Substring(control, div);
-                        control += div;
-                    }
+                    // Cifrar el texto original
+                    byte[] textoCifrado = encryptor.TransformFinalBlock(bytesTextoOriginal, 0, bytesTextoOriginal.Length);
+                    return textoCifrado;
+
                 }
-
-
-            
-
-
-            
-
-
-            return resultMatrix;
-
-
-
+            }
 
         }
         

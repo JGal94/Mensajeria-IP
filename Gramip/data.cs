@@ -10,7 +10,7 @@ namespace Gramip
     {
         private int puerto = 0;
         private String ip = "";
-        private int clave = 0;
+        private String clave = "";
 
         public int Puerto
         {
@@ -24,7 +24,7 @@ namespace Gramip
             set { ip = value; }
         }
 
-        public int Clave
+        public String Clave
         {
             get { return clave; }
             set { clave = value; }

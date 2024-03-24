@@ -46,3 +46,13 @@ C:\Users\admin\OneDrive\Gramip\obj\Debug\net8.0-windows\refint\Gramip.dll
 C:\Users\admin\OneDrive\Gramip\obj\Debug\net8.0-windows\Gramip.pdb
 C:\Users\admin\OneDrive\Gramip\obj\Debug\net8.0-windows\Gramip.genruntimeconfig.cache
 C:\Users\admin\OneDrive\Gramip\obj\Debug\net8.0-windows\ref\Gramip.dll
+C:\Users\juanf\OneDrive\Repos\Gramip\Gramip\obj\Debug\net8.0-windows\Gramip.Form1.resources
+C:\Users\juanf\OneDrive\Repos\Gramip\Gramip\obj\Debug\net8.0-windows\Gramip.csproj.GenerateResource.cache
+C:\Users\juanf\OneDrive\Repos\Gramip\Gramip\obj\Debug\net8.0-windows\Gramip.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\juanf\OneDrive\Repos\Gramip\Gramip\obj\Debug\net8.0-windows\Gramip.AssemblyInfoInputs.cache
+C:\Users\juanf\OneDrive\Repos\Gramip\Gramip\obj\Debug\net8.0-windows\Gramip.AssemblyInfo.cs
+C:\Users\juanf\OneDrive\Repos\Gramip\Gramip\obj\Debug\net8.0-windows\Gramip.csproj.CoreCompileInputs.cache
+C:\Users\juanf\OneDrive\Repos\Gramip\Gramip\obj\Debug\net8.0-windows\Gramip.sourcelink.json
+C:\Users\juanf\OneDrive\Repos\Gramip\Gramip\obj\Debug\net8.0-windows\Gramip.dll
+C:\Users\juanf\OneDrive\Repos\Gramip\Gramip\obj\Debug\net8.0-windows\refint\Gramip.dll
+C:\Users\juanf\OneDrive\Repos\Gramip\Gramip\obj\Debug\net8.0-windows\Gramip.pdb

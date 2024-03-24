@@ -17,7 +17,7 @@ namespace Gramip
         public Form1()
         {
             InitializeComponent();
-            lblEstado = this.lblEstado;
+            lblEstado = new Label();
 
         }
 
@@ -54,23 +54,12 @@ namespace Gramip
             textBoxCh.Text += linAc + "\r\n";
             textBoxMe.Text = "";
 
-            String[,] mtx = codificar.codificacion(linAc);
-            int da = 0;
-            for (int i = 0; i <= 2; i++)
-            {
-                for (int j = 0; j <= 2; j++)
-                {
-                    da++;
-                    textBoxCh.Text += mtx[i, j].ToString() + "\t";
-                    Console.WriteLine("Hola");
-                }
-
-            }
-
-            //Thread hilo = new Thread(() => envmatriz(codificar.codificacion(linAc)));
+            
+            
+            Thread hilo = new Thread(() => envmatriz(codificar.codificacion(linAc, Dato.Clave)));
 
         }
-        private void envmatriz(String[,] matriz)
+        private void envmatriz(byte [] matriz)
         {
             try
             {
@@ -80,14 +69,7 @@ namespace Gramip
                 using (NetworkStream stream = cliente.GetStream())
                 using (BinaryWriter escritor = new BinaryWriter(stream))
                 {
-                    for (int i = 0; i < 2; i++)
-                    {
-                        for (int j = 0; j < 2; j++)
-                        {
-                            escritor.Write(matriz[i, j]);
-
-                        }
-                    }
+                    
                 }
                 cliente.Close();
                 interfazact("matriz enviada con exito");
@@ -112,7 +94,7 @@ namespace Gramip
             }
             else
             {
-                lblEstado.Text = mensaje;
+                
             }
         }
 
@@ -133,7 +115,7 @@ namespace Gramip
 
                 Dato.Puerto = Int32.Parse(textBoxPu.Text);
                 Dato.Ip = textBoxIp.Text;
-                Dato.Clave = Int32.Parse(textBoxCl.Text);
+                Dato.Clave = textBoxCl.Text;
 
                 SvInicio();
             }
@@ -166,20 +148,7 @@ namespace Gramip
 
                         using (NetworkStream stream = Cliente.GetStream())
                         using (BinaryReader lector = new BinaryReader(stream))
-                        {
-
-                            int[,] matriz = new int[2, 2];
-                            for (int i = 0; i < 2; i++)
-                            {
-                                for (int j = 0; j < 2; j++)
-                                {
-                                    matriz[i, j] = lector.ReadInt32();
-                                }
-                                dec.Decode(matriz);
-                            }
-
-
-                        }
+                        
 
                     }
 
@@ -192,6 +161,7 @@ namespace Gramip
                 Console.WriteLine($"Error en el servidor: {ex.Message}");
             }
         }
+
 
 
 

@@ -69,7 +69,11 @@ namespace Gramip
                 using (NetworkStream stream = cliente.GetStream())
                 using (BinaryWriter escritor = new BinaryWriter(stream))
                 {
-                    
+                    // Escribe la longitud del array
+                    escritor.Write(matriz.Length);
+                    // Escribe los bytes de la matriz
+                    escritor.Write(matriz);
+
                 }
                 cliente.Close();
                 interfazact("matriz enviada con exito");
@@ -148,10 +152,15 @@ namespace Gramip
 
                         using (NetworkStream stream = Cliente.GetStream())
                         using (BinaryReader lector = new BinaryReader(stream))
-                        
+                        {
+                            int longitud = lector.ReadInt32();
 
+                            // Lee los bytes de la matriz
+                            byte[] matriz = lector.ReadBytes(longitud);
+                            textBoxCh.Text += dec.Decode(matriz, Dato.Clave) + "\r\n";
+
+                        }
                     }
-
 
 
                 }

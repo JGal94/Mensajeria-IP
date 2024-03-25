@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gramip")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e2ae8814668fff4e128ceb25ac8a34e4afd10c1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+038df4803e0c6fb3558b2d9bdc8ed298a5eee14c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gramip")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gramip")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
